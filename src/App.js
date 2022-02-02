@@ -1,7 +1,11 @@
-import './App.css';
+import Histori from './components/Histori';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Histori />
+    </div>
+  );
 }
 
 export default App;
