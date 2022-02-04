@@ -1,11 +1,11 @@
-import Histori from './components/Histori';
 import Appbar from './components/Appbar';
+import Histori from './components/Histori';
 
 function App() {
   return (
     <div className="App">
-      <Histori />
       <Appbar />
+      <Histori />
     </div>
   );
 }

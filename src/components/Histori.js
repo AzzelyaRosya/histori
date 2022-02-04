@@ -5,6 +5,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Contact from './Contact';
 // iconnya
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
@@ -21,196 +22,77 @@ export default function Histori() {
   };
 
   return (
-    <Container>
-      <Box>
-        <Grid>
-          {/* isi atas atau header */}
-          <div style={{ marginTop: '70px' }}>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ border: 2, bgcolor: '#F78104' }}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header" style={{ color: '#fff' }}>
-                <Typography p={1} m={1} sx={{ width: '37%', flexShrink: 0 }}>
-                  <b>1 Januari 2022</b>
-                </Typography>
-                <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>
-                    <b>Sakit</b>
-                  </Typography>
-                  <Typography> 15</Typography>
-                </Grid>
-                <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>
-                    <b>Izin</b>
-                  </Typography>
-                  <Typography> 12</Typography>
-                </Grid>
-                <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>
-                    <b>Alpa</b>
-                  </Typography>
-                  <Typography> 22</Typography>
-                </Grid>
-              </AccordionSummary>
-              {/* expand */}
-              <AccordionDetails>
-                <Typography>Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.</Typography>
-              </AccordionDetails>
-            </Accordion>
+    <>
+      {/* isi atas atau header */}
+      <div style={{ padding: '10px', marginTop: 70 }}>
+        <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ border: 0, bgcolor: '#f2f2f2' }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header" style={{ color: '#fff', backgroundColor: '#F78104' }}>
+            <Typography p={1} m={1} sx={{ width: '37%', flexShrink: 0 }}>
+              <b>1 Januari 2022</b>
+            </Typography>
+            <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
+              <Typography>
+                <b>Sakit</b>
+              </Typography>
+              <Typography> 15</Typography>
+            </Grid>
+            <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
+              <Typography>
+                <b>Izin</b>
+              </Typography>
+              <Typography> 12</Typography>
+            </Grid>
+            <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
+              <Typography>
+                <b>Alpa</b>
+              </Typography>
+              <Typography> 22</Typography>
+            </Grid>
+          </AccordionSummary>
+          <AccordionDetails style={{ color: '#fff' }}>
+            <Contact />
+            <Contact />
+            <Contact />
+          </AccordionDetails>
+        </Accordion>
+      </div>
 
-            {/* contact */}
-            <Box sx={{ border: 2, my: 1, p: 2, mt: -2 }}>
-              <Paper sx={{ border: 2, maxWidth: 1200, my: 1, p: 2 }} style={{ backgroundColor: '#e6e6e6' }}>
-                <Grid container wrap="nowrap" spacing={2}>
-                  <Grid item>
-                    <Avatar>
-                      <IconButton>
-                        <PersonSharpIcon />
-                      </IconButton>
-                    </Avatar>
-                  </Grid>
-                  <Grid item xs>
-                    <Typography>
-                      <b>{message}</b>
-                      <br />
-                      {message2}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Paper>
+      {/* batas 1 */}
 
-              <Paper sx={{ border: 2, maxWidth: 1200, my: 1, p: 2 }} style={{ backgroundColor: '#e6e6e6' }}>
-                <Grid container wrap="nowrap" spacing={2}>
-                  <Grid item>
-                    <Avatar>
-                      <IconButton>
-                        <PersonSharpIcon />
-                      </IconButton>
-                    </Avatar>
-                  </Grid>
-                  <Grid item xs>
-                    <Typography>
-                      <b>{message}</b>
-                      <br />
-                      {message2}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Paper>
-              <Paper sx={{ border: 2, maxWidth: 1200, my: 1, p: 2 }} style={{ backgroundColor: '#e6e6e6' }}>
-                <Grid container wrap="nowrap" spacing={2}>
-                  <Grid item>
-                    <Avatar>
-                      <IconButton>
-                        <PersonSharpIcon />
-                      </IconButton>
-                    </Avatar>
-                  </Grid>
-                  <Grid item xs>
-                    <Typography>
-                      <b>{message}</b>
-                      <br />
-                      {message2}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Paper>
-            </Box>
-          </div>
+      <div style={{ padding: '10px', marginTop: 0 }}>
+        <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} sx={{ border: 0, bgcolor: '#f2f2f2' }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2bh-content" id="panel2bh-header" style={{ color: '#fff', backgroundColor: '#F78104' }}>
+            <Typography p={1} m={1} sx={{ width: '37%', flexShrink: 0 }}>
+              <b>2 Januari 2022</b>
+            </Typography>
 
-          {/* batas 1 */}
-
-          <div>
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} sx={{ border: 2, bgcolor: '#F78104' }}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2bh-content" id="panel2bh-header" style={{ color: '#fff' }}>
-                <Typography p={1} m={1} sx={{ width: '37%', flexShrink: 0 }}>
-                  <b>2 Januari 2022</b>
-                </Typography>
-
-                <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>
-                    <b>Sakit</b>
-                  </Typography>
-                  <Typography> 15</Typography>
-                </Grid>
-                <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>
-                    <b>Izin</b>
-                  </Typography>
-                  <Typography> 12</Typography>
-                </Grid>
-                <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
-                  <Typography>
-                    <b>Alpa</b>
-                  </Typography>
-                  <Typography> 22</Typography>
-                </Grid>
-              </AccordionSummary>
-              {/* expand */}
-              <AccordionDetails>
-                <Typography>Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar diam eros in elit. Pellentesque convallis laoreet laoreet.</Typography>
-              </AccordionDetails>
-            </Accordion>
-
-            {/* contact */}
-            <Box sx={{ border: 2, my: 1, p: 2, mt: -2 }}>
-              <Paper sx={{ border: 2, maxWidth: 1200, my: 1, p: 2 }} style={{ backgroundColor: '#e6e6e6' }}>
-                <Grid container wrap="nowrap" spacing={2}>
-                  <Grid item>
-                    <Avatar>
-                      <IconButton>
-                        <PersonSharpIcon />
-                      </IconButton>
-                    </Avatar>
-                  </Grid>
-                  <Grid item xs>
-                    <Typography>
-                      <b>{message}</b>
-                      <br />
-                      {message2}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Paper>
-
-              <Paper sx={{ border: 2, maxWidth: 1200, my: 1, p: 2 }} style={{ backgroundColor: '#e6e6e6' }}>
-                <Grid container wrap="nowrap" spacing={2}>
-                  <Grid item>
-                    <Avatar>
-                      <IconButton>
-                        <PersonSharpIcon />
-                      </IconButton>
-                    </Avatar>
-                  </Grid>
-                  <Grid item xs>
-                    <Typography>
-                      <b>{message}</b>
-                      <br />
-                      {message2}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Paper>
-              <Paper sx={{ border: 2, maxWidth: 1200, my: 1, p: 2 }} style={{ backgroundColor: '#e6e6e6' }}>
-                <Grid container wrap="nowrap" spacing={2}>
-                  <Grid item>
-                    <Avatar>
-                      <IconButton>
-                        <PersonSharpIcon />
-                      </IconButton>
-                    </Avatar>
-                  </Grid>
-                  <Grid item xs>
-                    <Typography>
-                      <b>{message}</b>
-                      <br />
-                      {message2}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </Paper>
-            </Box>
-          </div>
-        </Grid>
-      </Box>
-    </Container>
+            <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
+              <Typography>
+                <b>Sakit</b>
+              </Typography>
+              <Typography> 15</Typography>
+            </Grid>
+            <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
+              <Typography>
+                <b>Izin</b>
+              </Typography>
+              <Typography> 12</Typography>
+            </Grid>
+            <Grid item xs={2} style={{ display: 'flex', flexDirection: 'column' }}>
+              <Typography>
+                <b>Alpa</b>
+              </Typography>
+              <Typography> 22</Typography>
+            </Grid>
+          </AccordionSummary>
+          {/* expand */}
+          <AccordionDetails style={{ color: '#fff' }}>
+            <Contact />
+            <Contact />
+            <Contact />
+          </AccordionDetails>
+        </Accordion>
+      </div>
+    </>
   );
 }
