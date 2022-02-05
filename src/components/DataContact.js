@@ -1,41 +1,23 @@
-import PersonSharpIcon from '@mui/icons-material/PersonSharp';
+import jennie from '../img/jennie.jpg';
+import sakura from '../img/sakura.jpg';
+import tae from '../img/tae.png';
 
-const DataContact = [
+const lotsOfData = [
   {
-    ava: <PersonSharpIcon />,
-    nama: 'Angga Gatau Siapa',
+    img: jennie,
+    nama: 'Jennie',
     info: 'Sabuk Putih',
   },
   {
-    ava: <PersonSharpIcon />,
-    nama: 'Gilang',
-    info: 'Sabuk Hijau',
+    img: sakura,
+    nama: 'Sakura',
+    info: 'Sabuk Hitam',
   },
   {
-    ava: <PersonSharpIcon />,
-    nama: 'Ariana Grande',
-    info: 'Sabuk Ungu',
-  },
-  {
-    ava: <PersonSharpIcon />,
-    nama: 'Adele',
+    img: tae,
+    nama: 'Taehyung',
     info: 'Sabuk Kuning',
-  },
-  {
-    ava: <PersonSharpIcon />,
-    nama: 'Chika',
-    info: 'Sabuk Putih',
-  },
-  {
-    ava: <PersonSharpIcon />,
-    nama: 'Sahrul',
-    info: 'Gesper Putih',
-  },
-  {
-    ava: <PersonSharpIcon />,
-    nama: 'Ajel Aja',
-    info: 'Sabuk Putih',
   },
 ];
 
-export default DataContact;
+export default lotsOfData;
