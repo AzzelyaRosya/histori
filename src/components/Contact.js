@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Typography, Card, Avatar } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Typography, Card, Avatar, Grid } from '@mui/material';
 import lotsOfData from './DataContact';
 
 const Data = () => {

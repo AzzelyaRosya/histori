@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Box, IconButton, Typography, AppBar } from '@mui/material';
 // icon
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
