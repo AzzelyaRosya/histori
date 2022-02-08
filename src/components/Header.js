@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Typography, Grid } from '@mui/material';
 
-export default function Header() {
+export default function Header(props) {
   return (
     <>
       {/* sakit */}
@@ -9,7 +9,7 @@ export default function Header() {
         <Typography>
           <b>Sakit</b>
         </Typography>
-        <Typography> 15</Typography>
+        <Typography>{props.sakit}</Typography>
       </Grid>
 
       {/* izin */}
@@ -17,7 +17,7 @@ export default function Header() {
         <Typography>
           <b>Izin</b>
         </Typography>
-        <Typography> 12</Typography>
+        <Typography>{props.izin}</Typography>
       </Grid>
 
       {/* alpa */}
@@ -25,7 +25,7 @@ export default function Header() {
         <Typography>
           <b>Alpa</b>
         </Typography>
-        <Typography> 22</Typography>
+        <Typography>{props.alpa}</Typography>
       </Grid>
     </>
   );
