@@ -5,9 +5,10 @@ import { Typography, Accordion, AccordionDetails, AccordionSummary } from '@mui/
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 // import component
-import Contact from './Contact';
-import Header from './Header';
-import lotsOfData from './DataAll';
+import Contact from '../components/Contact';
+import Header from '../components/Header';
+import lotsOfData from '../components/DataAll';
+import Navbar from '../components/Navbar';
 
 // import color
 import { grey } from '@mui/material/colors';
@@ -23,6 +24,7 @@ const Histori = (props) => {
     <>
       {lotsOfData.map((data, index) => (
         <div key={index}>
+          <Navbar />
           {/* card 1 */}
           {/* Header */}
           <div style={{ padding: '10px', marginTop: 70 }}>
