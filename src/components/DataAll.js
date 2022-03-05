@@ -7,6 +7,7 @@ import adel from '../img/adel.jpg';
 
 const lotsOfData = [
   {
+    id: 1,
     date: '1 Januari 2022',
     sakit: '15',
     izin: '12',
@@ -30,6 +31,7 @@ const lotsOfData = [
     ],
   },
   {
+    id: 2,
     date: '2 Januari 2022',
     sakit: '18',
     izin: '10',

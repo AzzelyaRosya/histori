@@ -14,10 +14,11 @@ import Navbar from '../components/Navbar';
 import { grey } from '@mui/material/colors';
 
 const Histori = (props) => {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(0);
 
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
+  const handleChange = (panel) => {
+    console.log(panel);
+    setExpanded(panel);
   };
 
   return (
@@ -28,7 +29,7 @@ const Histori = (props) => {
           {/* card 1 */}
           {/* Header */}
           <div style={{ padding: '10px', marginTop: 70 }}>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ border: 0, bgcolor: '#f2f2f2' }}>
+            <Accordion expanded={expanded === data.id} onChange={() => handleChange(data.id)} sx={{ border: 0, bgcolor: '#f2f2f2' }}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon sx={{ color: grey[50] }} style={{ color: '#fff' }} />}
                 aria-controls="panel1bh-content"
